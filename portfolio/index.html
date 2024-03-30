@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11fb63e321.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div id="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI/ML Engineer</p>
+            <h1>Hi,I'm <span>Edwin</span> <br>E Binu I am from Delhi</h1>
+        </div>
+
+    </div>
+</div>
+<!--------------------about--------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm Edwin E Binu, and I'm passionate about Programming. With 3 years of experience in Coding, I've honed my skills in Web development,UX/UI designing, and Machine learning. I'm known for creating product websites, and I take pride in ML projects.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                   
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AI/ML</span><br>Creating AI models</li>
+                        <li><span>Web Development</span><br>Web app development</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Current</span><br>Data Structures &Algorithms<br>Projects related to Game Development</li>
+                        <li><span>2022-2023</span><br> Python for ML&AI model making<br></li>
+                        <li><span>2020-2022</span><br>Javascript for web development<br> C language </li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024-current</span><br>Btech in Computer science </li>
+                        <li><span>2023</span><br>Full Stack Development course From Codecamp</li>
+                        <li><span>2023</span><br>Graduated High School with CS as course subject</li>
+                    </ul>
+
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Highly creative and detail-oriented Web Designer with over 5 years of experience in crafting compelling user interfaces and digital experiences. Proficient in HTML, CSS, JavaScript, and modern web design tools. Adept at responsive design with a keen eye for aesthetics and user-centric layouts.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI Design</h2>
+                <p>Innovative UI Designer with a passion for creating intuitive and visually appealing digital interfaces. With over 4 years of experience in the industry, I specialize in designing user-centric solutions that enhance engagement and drive business success. Proficient in a suite of design software and well-versed in the latest UI trends</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI Models</h2>
+                <p>AI models are essentially programs that have been trained on a set of data to recognize patterns and make decisions or predictions without further human intervention. They apply various algorithms to process data inputs and achieve the tasks they’ve been programmed for. These models can range from simple rule-based systems to complex neural networks and machine learning frameworks.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>       
+
+    </div>
+
+
+</div>
+<!---------------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpeg">
+                <div class="layer">
+                    <h3>Social Media Web</h3>
+                    <p>This website provides direct links to Universities for course eligibility.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpeg">
+                <div class="layer">
+                    <h3>Mobile Games</h3>
+                    <p>An Online parkour game made with Unity engine.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>                
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpeg">
+                <div class="layer">
+                    <h3>A Mini Arduino computer </h3>
+                    <p>An Arduino project made for tracking footsteps.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------contact form------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>edwinebinu07@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0000000000</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Eddycurrentz"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/EdwinEBinu"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/eddy_currentzz/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/edwin-e-binu-783668283/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Edwin.Made with <i class="fa-solid fa-heart"></i>by Eddy Currents</p>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")    
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+
+</script>  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwB0GD2c7Hj6iySYZAF84-EMOs_omojQ2nGFY3EeZthWCikVathuvxpIoEVIj04z7BGqQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>  
+
+</body>
+</html>
